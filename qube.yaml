@@ -35,6 +35,8 @@ bake:
      - /opt/twistlock/result-analyzer.sh twistlock 'high==0 && medium==0' 'pass' twistlock_report.txt
     args:
       - $(CONTAINER_NAME)
+    publish:
+      - analysis.json
 test:
   skip: true
 deploy_to_qa:
