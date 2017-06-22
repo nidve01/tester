@@ -80,8 +80,6 @@ vertices:
       - $(CONTAINER_NAME)
       - \'high==0 && medium==0\'
       - \'pass\'
-    publish:
-      - analysis.json
     execute_outside_toolchain: false
   push_to_registry:
     action:
